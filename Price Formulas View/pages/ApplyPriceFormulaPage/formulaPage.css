@@ -1,0 +1,137 @@
+*{    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+}
+
+body{
+    color: rgb(18,31,44);
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgb(18,31,44);
+    height: 100vh;
+    width: 160px;
+    position: fixed;
+}
+
+.navbar__logo{
+    height: 30px;
+    width: auto;
+}
+
+.navbar a{
+    text-decoration: none;
+    color:white;
+    margin: 15px;
+}
+
+.product-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+}
+
+.product-container__title{
+    font-size: 2vw;
+}
+
+.product-container__image{
+    margin: 2vw;
+    height: auto;
+    width: 10vw;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.formula-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.formula-container__input{
+    height: 5vw;
+    border-style: dashed;
+    text-align: center;
+    font-size: 2vw;
+}
+
+.formula-container__input--valid{
+    height: 5vw;
+    border-style: dashed;
+    text-align: center;
+    font-size: 2vw;
+    border-color: tomato;
+}
+
+.formula-container__edit-buttons{
+    display: flex;
+}
+
+.formula-container button{
+    font-size: 2vw;
+    margin: 10px;
+    width:fit-content;
+    height: auto;
+    border: 1px solid transparent;
+    background: transparent;
+    cursor: pointer;
+}
+
+.formula-container button:hover{
+    color: #22BA93;
+    transition: 300ms;
+}
+
+.products-container{
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    margin-left: 100px;
+}
+
+.products-container__articles{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+}
+
+@media screen and (max-width:600px) {
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        background-color: rgb(18,31,44);
+        height: 40px;
+        width: 100vw;
+        top: 0px;
+        position: fixed;
+    }
+
+    .navbar__logo{
+        height: 20px;
+        width: auto;
+    }
+
+    .navbar a{
+        text-decoration: none;
+        color:white;
+        margin: 5px;
+        font-size: 11px;
+        align-self: center;
+    }
+
+    .products-container{
+        display: flex;
+        flex-direction: column;
+        flex: auto;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+}
